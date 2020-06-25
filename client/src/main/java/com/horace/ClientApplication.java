@@ -1,13 +1,11 @@
 package com.horace;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.horace.repository")
-public class MenuApplication {
+public class ClientApplication {
     public static void main(String[] args) {
-        SpringApplication.run(MenuApplication.class,args);
+        SpringApplication.run(ClientApplication.class,args);
     }
 }

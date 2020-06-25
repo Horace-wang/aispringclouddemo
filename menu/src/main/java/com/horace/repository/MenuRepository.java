@@ -1,9 +1,10 @@
 package com.horace.repository;
 
 import com.horace.entity.Menu;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
-
+@Repository
 public interface MenuRepository {
     //查询全部
     List<Menu> findAll(int index,int limit);
@@ -11,7 +12,7 @@ public interface MenuRepository {
     int count();
     //通过id查询
     Menu findById(long id);
-    //保存
+    //增加
     void save(Menu menu);
     //更新
     void update(Menu menu);
